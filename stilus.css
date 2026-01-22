@@ -1,11 +1,127 @@
+/* Alapbeállítások */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #0066cc;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+em {
+    font-style: italic;
+}
+
+.intro-text {
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+/* Kép */
+.moon-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
 /* Táblázat beállításai */
 table {
-        border-collapse:collapse;  /* szegély összevonása*/
-      }
-td,th { 
-        border:1px solid black;   /* szegély beállítása */
-        padding: 10px;              /* kitöltés (belső margó) beállítása */  
-       }
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 25px;
+}
 
+.crater-table th {
+    background-color: #a8d8ff;
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
 
-/* További beállítások a feladat szerint */
+.crater-table td {
+    background-color: #c8e6ff;
+    border: 1px solid #999;
+    padding: 10px 12px;
+    color: #333;
+}
+
+.crater-table tr:nth-child(odd) td {
+    background-color: #d4edff;
+}
+
+.crater-table tr:nth-child(even) td {
+    background-color: #c8e6ff;
+}
+
+/* Lista */
+.layers-list {
+    list-style: disc;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.layers-list li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Források */
+.sources-text {
+    margin-top: 25px;
+    font-size: 0.95em;
+}
+
+.sources-text a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.sources-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    body {
+        padding: 15px;
+    }
+}
